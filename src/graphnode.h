@@ -21,7 +21,7 @@ class GraphNode {
 
   // data handles (not owned)
   std::vector<GraphEdge *> _parentEdges;  // edges to preceding nodes
-  ChatBot *_chatBot = nullptr;
+  ChatBot _chatBot;
 
   ////
   //// EOF STUDENT CODE
@@ -50,7 +50,7 @@ class GraphNode {
   //// STUDENT CODE
   ////
 
-  void MoveChatbotHere(ChatBot *chatbot);
+  void MoveChatbotHere(ChatBot chatbot);
 
   ////
   //// EOF STUDENT CODE
